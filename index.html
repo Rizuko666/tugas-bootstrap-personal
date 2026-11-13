@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi | Mochammad Fariz Al Baihaqi</title>
+    <!-- Memanggil CSS Bootstrap 5 via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Memanggil Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <style>
+        /* Modifikasi CSS Kustom Sederhana */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-section { background-color: #f8f9fa; padding: 100px 0; }
+        .card:hover { transform: translateY(-5px); transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portofolio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (JUMBOTRON) -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <img src="https://ui-avatars.com/api/?name=Fariz+Albaihaqi&background=0D8ABC&color=fff&size=150" alt="Profile" class="rounded-circle shadow mb-4">
+            <h1 class="display-4 fw-bold">Mochammad Fariz Al Baihaqi    </h1>
+            <p class="lead text-muted">Mahasiswa Sistem Informasi | Web Developer Enthusiast</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3 px-4 rounded-pill"><i class="bi bi-envelope-fill me-2"></i>Hubungi Saya</a>
+        </div>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Tentang Saya</h2>
+                    <div class="bg-primary rounded" style="height: 4px; width: 60px; margin-bottom: 20px;"></div>
+                    <p class="fs-5 text-secondary">Saya adalah mahasiswa semester 3 di Program Studi S1 Sistem Informasi, Fakultas Rekayasa Industri, Telkom University Surabaya.</p>
+                    <p class="text-secondary">Saya memiliki ketertarikan yang besar dalam pengembangan aplikasi web dan UI/UX Design. Saat ini saya sedang mendalami framework CSS seperti Bootstrap untuk menciptakan antarmuka yang responsif dan *user-friendly*.</p>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Card Komponen untuk Info Tambahan -->
+                    <div class="card border-0 shadow-sm bg-light">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-3"><i class="bi bi-person-badge text-primary me-2"></i>Detail Informasi</h5>
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent"><strong>NIM:</strong> 108052500109</li>
+                                <li class="list-group-item bg-transparent"><strong>Kampus:</strong> Telkom University Surabaya</li>
+                                <li class="list-group-item bg-transparent"><strong>Fakultas:</strong> Rekayasa Industri</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN (SKILLS) -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Keahlian Saya</h2>
+            <div class="row g-4">
+                <!-- Skill 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm py-4">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash text-primary mb-3" style="font-size: 3rem;"></i>
+                            <h4 class="card-title fw-bold">Web Development</h4>
+                            <p class="card-text text-muted">Mampu membangun struktur dasar website menggunakan HTML5 dan PHP Dasar.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm py-4">
+                        <div class="card-body">
+                            <i class="bi bi-palette text-success mb-3" style="font-size: 3rem;"></i>
+                            <h4 class="card-title fw-bold">Web Design</h4>
+                            <p class="card-text text-muted">Berpengalaman men-styling tampilan menggunakan CSS mentah dan framework Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm py-4">
+                        <div class="card-body">
+                            <i class="bi bi-server text-danger mb-3" style="font-size: 3rem;"></i>
+                            <h4 class="card-title fw-bold">Database</h4>
+                            <p class="card-text text-muted">Memahami konsep dasar basis data dan query dasar menggunakan MySQL & PHPMyAdmin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="contact" class="py-5">
+        <div class="container text-center w-50">
+            <h2 class="fw-bold mb-4">Mari Berkolaborasi</h2>
+            <p class="text-muted mb-5">Punya ide proyek menarik atau pertanyaan? Jangan ragu untuk menghubungi saya melalui formulir di bawah ini.</p>
+            <form class="text-start p-4 border rounded shadow-sm">
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Nama Lengkap</label>
+                    <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Alamat Email</label>
+                    <input type="email" class="form-control" placeholder="nama@email.com">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">Pesan</label>
+                    <textarea class="form-control" rows="4" placeholder="Ketik pesan Anda..."></textarea>
+                </div>
+                <button type="button" class="btn btn-dark w-100 py-2 fw-bold">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Mochammad Fariz Al Baihaqi. All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
